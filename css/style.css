@@ -174,177 +174,130 @@ a{
 
 
  @media (min-width: 319px) and (max-width: 480px) {
-    .top-cloud {
-            display: block;
-            top: 20px;
-            right: 10px;
-        }
-    
-        .bottom-cloud {
-            display: none;
-        }
-    
-        .middle-container {
-            display: block;
-            margin: 50px 0;
-            /* Reduce top and bottom margins for the middle container */
-        }
-        .skills{
-            display: block;
-            margin: 50px 0;
-            width: 50%;
-            /* Reduce top and bottom margins for the middle container */
-        }
-        .intro{
-            width: 80%;
-            margin: auto;
-        }
-    
-        .parent {
-            display: block;
-            width: 80%;
-            margin: 50px auto auto;
-            text-align: left;
-            row-gap: 2rem;
-        }
-        .coding{
-            display: block;
-            width: 80%;
-            align-items: center;
-            padding-left: 50%;
-            /* Reduce top and bottom margins for the middle container */
-        }
-        .figure{
-            display: block;
-            width: 80%;
-            align-items: center;
-            padding-left: 50%;
-            /* Reduce top and bottom margins for the middle container */
-        }
-        .figures{
-            display: block;
-            width: 80%;
-            align-items: center;
-            padding-left: 50%;
-            /* Reduce top and bottom margins for the middle container */
-        }
-        .coding>h2{
-            display: block;
-            margin: 50px 0;
-            width: 80%;
-            align-items: center;
-            padding-left: 50%;
-            font-size: 0.5rem;
-            /* Reduce top and bottom margins for the middle container */
-        }
-                                #features>div>div.skills>div:nth-child(2)>div.coding>p {
-                                    display: block;
-                                    width: 80%;
-                                    margin: 0 auto;
-                                    /* Center the text horizontally */
-                                    line-height: 1.5;
-                                    /* Adjust line height to reduce spacing */
-                                    font-size: 0.80rem;
-                                    /* Adjust the font size as needed */
-                                }
-                                                                #features>div>div.skills>div:nth-child(3)>div.figures{
-                                                                    display: block;
-                                                                    width: 80%;
-                                                                    margin: 0 auto;
-                                                                    /* Center the text horizontally */
-                                                                    line-height: 1.5;
-                                                                    /* Adjust line height to reduce spacing */
-                                                                    font-size: 0.80rem;
-                                                                    /* Adjust the font size as needed */
-                                                                }
-        .skills>h2{
-            display: block;
-            margin: 50px 0;
-            width: 80%;
-            align-items: center;
-            padding-left: 50%;
-            /* Reduce top and bottom margins for the middle container */
-        }
-    
-        .top-containter {
-            
-            padding-top: 30px;
-        }
-        .bottom-container{
-            display: block;
-            padding: 50px 0 20px 0;
-        }
-        .road {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-        }
-        body{
-            display: block;
-            color: #40514e;
-            margin: 0;
-            
-            text-align: center;
-            font-family: 'Caveat', cursive;
-                font-family: 'Comic Neue', cursive;
-                font-family: 'Libre Baskerville', serif;
-        }
-                 .title-text {
-                     text-align: center;
-                        margin: 0 auto;
-                     /* Center-align text on small screens */
-                 }
-                 .title-text>h1{
-                     font-size: 3.125rem;
-                 }
-                 .title-text>h2{
-                     font-size: 1.875rem;
-                 }
 
-           #features>div>div.skills>div:nth-child(2)>div.typing>img{
-                display: block;
-                width: 100%;
-                margin: 0 auto;
-           }
-           #features>div>div.skills>div:nth-child(3)>div.figure-photo>img{
-                        display: block;
-                        width: 100%;
-                        margin: 0 auto;
-                   }
+     /* Adjust top cloud position */
+     .top-cloud {
+         display: block;
+         top: 20px;
+         right: 10px;
+     }
 
-    }
+     /* Hide the bottom cloud */
+     .bottom-cloud {
+         display: none;
+     }
+
+     /* Center-align text in the middle container */
+     .middle-container {
+         text-align: center;
+         margin: 50px auto;
+         /* Center the container */
+     }
+
+     /* Increase the width of the intro text */
+     .intro {
+         width: 80%;
+         margin: auto;
+     }
+
+     /* Center-align content in the parent container */
+     .parent {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     /* Make coding and figure sections full-width */
+     .coding,
+     .figure {
+         width: 100%;
+         padding-left: 0;
+     }
+
+     /* Reduce the margin of coding and figure sections */
+     .coding>h2,
+     #features>div>div.skills>div:nth-child(2)>div.coding>p,
+     #features>div>div.skills>div:nth-child(3)>div.figures {
+         margin: 20px 0;
+         /* Adjust as needed */
+     }
+
+     /* Decrease the font size of h2 elements */
+     .coding>h2,
+     .skills>h2 {
+         font-size: 1.5rem;
+         /* Adjust as needed */
+     }
+
+     /* Center-align the title text and adjust font sizes */
+     .title-text {
+         text-align: center;
+         margin: 0 auto;
+     }
+
+     .title-text>h1 {
+         font-size: 2.5rem;
+     }
+
+     .title-text>h2 {
+         font-size: 1.5rem;
+     }
+
+     /* Adjust padding-top for the top container */
+     .top-containter {
+         padding-top: 20px;
+     }
+
+     /* Adjust padding for the bottom container */
+     .bottom-container {
+         padding: 30px 0 20px;
+     }
+ }
  @media (min-width: 481px) and (max-width: 1200px) {
+    /* Center-align the road image */
     .road {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-        }
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Adjust the position of the top cloud */
     .top-cloud {
-            display: block;
-            top: 50px;
-            right: 280px;
-               }
+        display: block;
+        top: 50px;
+        right: 50%; /* Center the cloud horizontally */
+        transform: translateX(50%); /* Center the cloud horizontally */
+    }
+
+    /* Adjust the position of the bottom cloud */
     .bottom-cloud {
-            display: block;
-            top: 350px;
-            left: 300px;
-               }
+        display: block;
+        top: 350px;
+        left: 50%; /* Center the cloud horizontally */
+        transform: translateX(-50%); /* Center the cloud horizontally */
+    }
+
+    /* Reduce the margin for the middle container */
     .middle-container {
-            margin: 50px 0;
-                                     /* Reduce top and bottom margins for the middle container */
-                      }
+        margin: 30px 0; /* Adjust as needed */
+    }
+
+    /* Adjust the width of the parent container */
     .parent {
         display: block;
-            width: 50%;
-     /* Wider width for parent container */
-             margin: 50px auto auto;
-            text-align: left;
-            row-gap: 2rem;
-            }
-            .top-containter{
-                padding-top: 50px;
-            }
+        width: 50%; /* Wider width for parent container */
+        margin: 30px auto auto; /* Adjust as needed */
+        text-align: left;
+        row-gap: 2rem;
     }
+
+    /* Adjust padding-top for the top container */
+    .top-containter {
+        padding-top: 30px;
+    }
+}
+
       
  @media (min-width: 1201px) and (max-width: 1600px) {
     .bottom-cloud{
