@@ -301,6 +301,17 @@ a{
                      font-size: 1.875rem;
                  }
 
+           #features>div>div.skills>div:nth-child(2)>div.typing>img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+           }
+           #features>div>div.skills>div:nth-child(3)>div.figure-photo>img{
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                   }
+
     }
  @media (min-width: 481px) and (max-width: 1200px) {
     .road {
