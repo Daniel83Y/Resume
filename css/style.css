@@ -1,4 +1,4 @@
-.top-containter{
+.top-container{
     background-color: #c8ebe5;
     position: relative;
     padding-top: 100px;
@@ -57,7 +57,7 @@ body {
         font-family: 'Comic Neue', cursive;
         font-family: 'Libre Baskerville', serif;
 }
-head{
+head {
     display: none;
 }
 
@@ -171,7 +171,7 @@ a{
     background-image: linear-gradient(to bottom, #b273f0, #b273f0);
     text-decoration: none;
 }
-@media (min-width: 285px) and (max-width: 318px) {
+@media (min-width: 280px) and (max-width: 318px) {
 
     /* Adjust top cloud position */
     .top-cloud {
@@ -243,7 +243,7 @@ a{
     }
 
     /* Adjust padding-top for the top container */
-    .top-containter {
+    .top-container {
         padding-top: 20px;
     }
 
@@ -342,7 +342,7 @@ a{
      }
 
      /* Adjust padding-top for the top container */
-     .top-containter {
+     .top-container {
          padding-top: 20px;
      }
 
@@ -366,7 +366,7 @@ a{
              margin: 100px auto;
          }
  }
- @media (min-width: 481px) and (max-width: px) {
+ @media (min-width: 481px) and (max-width:1200px) {
     /* Center-align the road image */
     .road {
         display: block;
@@ -405,7 +405,7 @@ a{
     }
 
     /* Adjust padding-top for the top container */
-    .top-containter {
+    .top-container {
         padding-top: 30px;
     }
 }
@@ -456,7 +456,7 @@ a{
     }
 
     /* Adjust padding-top for the top container */
-    .top-containter {
+    .top-container {
         padding-top: 30px;
     }
 }
