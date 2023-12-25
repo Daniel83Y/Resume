@@ -6,6 +6,10 @@
 
 
 }
+.popup{
+    visibility: hidden;
+    
+}
 .div{
     display: block;
 }
@@ -159,6 +163,7 @@ a{
 }
 .contact-me{
     margin: 100px 0;
+    padding: 15px;
 }
 
 
@@ -270,7 +275,15 @@ a{
     }
 }
 
- @media (min-width: 319px) and (max-width: 480px) {
+ @media (max-width: 480px) {
+    .road {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
 
      /* Adjust top cloud position */
      .top-cloud {
@@ -478,6 +491,8 @@ a{
             row-gap: 2rem;
         }
  }
+ 
+    
 
 
 
