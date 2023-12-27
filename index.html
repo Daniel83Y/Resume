@@ -19,7 +19,6 @@
                 </div>
         </div>
     </section>
-   <script src="JavaScript/script.js"></script>
 
 
     <!-- Middle -->
@@ -75,26 +74,58 @@
         </div>
       </div>
     </section>
-    <!-- Contact-me -->
-    
-     
+      <!-- Contact-me -->
+<div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>"If you are as big of a geek as me, let's unite!"</h3>
+      <h3>I'm currently looking for new opportunities, my inbox is always open.</h3>
+      <p class="contact-message">
+        Whether you have a question or just want to say hi, I'll try my best
+        to get back to you!
+      </p>
+      <button id="contactButton" onclick="togglePopup()">Contact Me</button>
 
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>"If you are as big of a geek as me, let's unite!"</h3>
-        <h3>
-          I'm currently looking for new opportunities, my inbox is always open.
-        </h3>
-        <p class="contact-message">
-          Whether you have a question or just want to say hi, I'll try my best
-          to get back to you!
-        </p>
-        <button onclick="togglePopup()" class="btn">CONTACT ME</button>
+    </div>
+<!-- Modal -->
+<form action="process_form.php" method="post" class="app-form"></form>
+<div class="screen" id="contactBox">
+  <div class="screen-body">
+    <div class="screen-body-item left">
+      <div class="app-title">
+        <span>CONTACT</span>
+        <span>US</span>
       </div>
-    </section>
+      <div class="app-contact">CONTACT INFO : +972 50 339 7776</div>
+    </div>
+    <div class="screen-body-item">
+      <div class="app-form">
+        <div class="app-form-group">
+          <input id="name" class="app-form-control" placeholder="NAME">
+        </div>
+        <div class="app-form-group">
+          <input id="email" class="app-form-control" placeholder="EMAIL">
+        </div>
+        <div class="app-form-group">
+          <input id="contactNo" class="app-form-control" placeholder="CONTACT NO">
+        </div>
+        <div class="app-form-group message">
+          <input id="message" class="app-form-control" placeholder="MESSAGE">
+        </div>
+        <div class="app-form-group buttons">
+          <button class="app-form-button" onclick="togglePopup()">CANCEL</button>
+          <button class="app-form-button" onclick="submitForm()">SEND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
     <!-- Footr -->
     <footer>
-      <div class="bottom-containter">
+      <div class="bottom-container">
         <a 
           class="footer-link"
           href="https://www.linkedin.com/in/daniel-tesler-8b88b1288/"
@@ -108,7 +139,6 @@
         <p class="copyright">© Daniel Tesler</p>
       </div>
     </footer>
-    <script src="/pages/contactMe/script.js"></script>
-    <script src="script.js"></script>
+    <script src="JavaScript/script.js"></script>
   </body>
 </html>
