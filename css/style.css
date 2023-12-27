@@ -18,6 +18,14 @@ body {
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
 }
+.title-text>h1 {
+            font-size: 5rem;
+        }
+
+        .title-text>h2 {
+            font-size: 2.5rem;
+            padding-bottom: 300px;
+        }
  title-text {
     text-align: center;
     
@@ -59,7 +67,6 @@ body {
         font-family: 'Comic Neue', cursive;
         font-family: 'Libre Baskerville', serif;
         font-weight: normal;
-            padding-bottom: 300px;
     }
     .pro{
         text-decoration: underline;
@@ -258,10 +265,12 @@ body {
 
         .title-text>h1 {
             font-size: 2.5rem;
+            padding-bottom: 300px;
         }
 
         .title-text>h2 {
             font-size: 1.5rem;
+            padding-bottom: 300px;
         }
 
         /* Adjust padding-top for the top container */
@@ -374,15 +383,10 @@ body {
         .title-text {
             text-align: center;
             margin:  auto;
+            
         }
 
-        .title-text>h1 {
-            font-size: 2.5rem;
-        }
-
-        .title-text>h2 {
-            font-size: 1.5rem;
-        }
+        
 
         /* Adjust padding-top for the top container */
         .top-container {
