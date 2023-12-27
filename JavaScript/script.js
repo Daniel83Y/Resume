@@ -41,7 +41,7 @@ function setBackgroundBasedOnTime() {
     backgroundUrl = "images/Gifs/afternoon.png";
   } else {
     // Night
-    backgroundUrl = "images/Gifs/Night.png";
+    backgroundUrl = "images/Gifs/night.png";
   }
 
   // Set background for top container
