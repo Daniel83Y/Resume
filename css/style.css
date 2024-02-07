@@ -1,0 +1,577 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.top-container {
+    position: relative; /* Change from static to relative */
+    background-size: cover;
+    background-position: center;
+    height: 700px; /* Adjust the height as needed */
+    width: 100%;
+    margin-top: 0; /* Remove the negative margin */
+    overflow: hidden; /* Add overflow: hidden to hide overflowing content */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+.title-text>h1 {
+            font-size: 5rem;
+        }
+
+        .title-text>h2 {
+            font-size: 2.5rem;
+            padding-bottom: 300px;
+        }
+ title-text {
+    text-align: center;
+    
+}
+
+   
+    .div{
+        display: block;
+    }
+    .top-cloud{
+        position: absolute;
+        top: 100px;
+        right: 400px;
+    }
+    img{
+        overflow-clip-margin: content-box;
+        overflow:clip;
+    }
+    h1{
+        color:#000000;
+        font-size: 5.625rem;
+        margin:50px auto o auto;
+        font-family: 'Caveat', cursive;
+            font-family: 'Comic Neue', cursive;
+            font-family: 'Libre Baskerville', serif;
+    }
+    h2{
+        display:block;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #000000;
+        font-size: 2.5rem;
+        font-family: 'Caveat', cursive;
+        font-family: 'Comic Neue', cursive;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: normal;
+    }
+    .pro{
+        text-decoration: underline;
+    }
+    .bottom-cloud{
+        position: absolute;
+        top: 250px;
+        left: 300px;
+    }
+    body {
+        background-size: cover;
+        display:block;
+        color: #40514e;
+        margin: 0;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+            font-family: 'Comic Neue', cursive;
+            font-family: 'Libre Baskerville', serif;
+    }
+    head {
+        display: none;
+    }
+
+    .intro{
+        width: 30%;
+        margin: auto;
+    }
+
+    p {
+        line-height: 2;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .middle-container {
+        margin: 100px 0 ;
+    }
+    hr {
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+        border: dotted #dbb7f0 6px;
+        border-bottom: none;
+        width: 4%;
+        margin: 100px auto;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: repeat(1,1fr);
+        width: 50%;
+        margin: 100px auto auto;
+        text-align: left;
+        row-gap: 2rem;
+    }
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        color: #9c20e4;
+        font-family: 'Caveat', cursive;
+        font-family: 'Comic Neue', cursive;
+        font-family: 'Libre Baskerville', serif;
+    }
+  #contactButton {
+        background: #c8ebe5;
+        background-image: -webkit-linear-gradient(top, #c8ebe5, #c8ebe5);
+        background-image: -moz-linear-gradient(top, #0cad92, #0cad92);
+        background-image: -ms-linear-gradient(top, #80dfcf, #80dfcf);
+        background-image: -o-linear-gradient(top, #c8ebe5, #c8ebe5);
+        background-image: linear-gradient(to bottom, #c8ebe5, #c8ebe5);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: 'Caveat', cursive;
+        font-family: 'Comic Neue', cursive;
+        font-family: 'Libre Baskerville', serif;
+        color: #000000;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+
+    .bottom-container{
+        background-color: #c8ebe5;
+        padding: 50px 0 0px 0;
+    }
+    a:hover {
+        color: #9c20e4;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a{
+        color: #000000;
+            font-family: "Montserrat", sans-serif;
+            margin: 10px 20px;
+            text-decoration: none;
+    }
+    a:-webkit-any-link {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    footer{
+        background-color: #c8ebe5;
+            padding: 50px 0 20px 0;
+    }
+    .copyright {
+        color: #9c20e4;
+        font-size: 1rem;
+        padding: 20px 0;
+    }
+    .contact-me{
+        margin: 50px 0;
+        padding: 15px;
+    }
+
+
+    .btn:hover {
+        background: #b273f0;
+        background-image: -webkit-linear-gradient(top, #b273f0, #b273f0);
+        background-image: -moz-linear-gradient(top, #b273f0, #b273f0);
+        background-image: -ms-linear-gradient(top, #b273f0, #b273f0);
+        background-image: -o-linear-gradient(top, #b273f0, #b273f0);
+        background-image: linear-gradient(to bottom, #b273f0, #b273f0);
+        text-decoration: none;
+    }
+    @media (min-width: 280px) and (max-width: 318px) {
+
+        /* Center-align text in the middle container */
+        .middle-container {
+            text-align: center;
+            margin: 50px auto;
+            /* Center the container */
+        }
+
+        /* Increase the width of the intro text */
+        .intro {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Center-align content in the parent container */
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Make coding and figure sections full-width */
+        .coding,
+        .figure {
+            width: 100%;
+            padding-left: 10;
+        }
+
+        /* Reduce the margin of coding and figure sections */
+        .coding>h2,
+        #features>div>div.skills>div:nth-child(2)>div.coding>p,
+        #features>div>div.skills>div:nth-child(3)>div.figures {
+            margin: 20px 0;
+            /* Adjust as needed */
+        }
+
+        /* Decrease the font size of h2 elements */
+        .coding>h2,
+        .skills>h2 {
+            font-size: 1.5rem;
+            /* Adjust as needed */
+        }
+       .title-text {
+            text-align: center;
+            margin:  auto;
+            
+        }
+        
+        /* Adjust padding-top for the top container */
+                           .top-container {
+                               position: relative;
+                               background-size: cover;
+                               background-position: center;
+                               height: 800px;
+                               /* Adjust the height as needed */
+                               margin-top: 0;
+                               /* Remove the negative margin */
+                               overflow: hidden;
+                               /* Add overflow: hidden to hide overflowing content */
+                               display: flex;
+                               align-items: center;
+                               /* Center vertically */
+                               justify-content: center;
+                               /* Center horizontally */
+                           }
+
+        /* Adjust padding for the bottom container */
+        .bottom-container {
+            padding: 30px 0 20px;
+        }
+
+        /* Adjust the HR styling */
+        hr {
+            display: block;
+            unicode-bidi: isolate;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
+            border-style: inset;
+            border-width: 1px;
+            border: dotted #dbb7f0 3px;
+            border-bottom: none;
+            width: 4%;
+            margin: 100px auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+      
+        /* Center-align text in the middle container */
+        .middle-container {
+            text-align: center;
+            margin: 50px auto;
+            /* Center the container */
+        }
+
+        /* Increase the width of the intro text */
+        .intro {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Center-align content in the parent container */
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Make coding and figure sections full-width */
+        .coding,
+        .figure {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        /* Reduce the margin of coding and figure sections */
+        .coding>h2,
+        #features>div>div.skills>div:nth-child(2)>div.coding>p,
+        #features>div>div.skills>div:nth-child(3)>div.figures {
+            margin: 20px 0;
+            /* Adjust as needed */
+        }
+
+        /* Decrease the font size of h2 elements */
+        .coding>h2,
+        .skills>h2 {
+            font-size: 1.5rem;
+            /* Adjust as needed */
+        }
+
+        /* Center-align the title text and adjust font sizes */
+        .title-text {
+            text-align: center;
+            margin:  auto;
+            
+        }
+
+        
+
+        /* Adjust padding-top for the top container */
+        .top-container {
+            padding-top: 20px;
+        }
+
+        /* Adjust padding for the bottom container */
+        .bottom-container {
+            padding: 30px 0 20px;
+        }
+            hr {
+                display: block;
+                unicode-bidi: isolate;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                overflow: hidden;
+                border-style: inset;
+                border-width: 1px;
+                border: dotted #dbb7f0 3px;
+                border-bottom: none;
+                width: 4%;
+                margin: 100px auto;
+            }
+    }
+    @media (min-width: 481px) and (max-width:1200px) {
+        /* Center-align the road image */
+        .road {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Reduce the margin for the middle container */
+                .middle-container {
+                    margin: 100px 0;
+                    position: relative;
+                    /* Add relative positioning */
+                }
+        /* Adjust the width of the parent container */
+        .parent {
+            display: block;
+            width: 50%; /* Wider width for parent container */
+            margin: 30px auto auto; /* Adjust as needed */
+            text-align: left;
+            row-gap: 2rem;
+        }
+
+        /* Adjust padding-top for the top container */
+        .top-container {
+            padding-top: 30px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 1200px) {
+
+        /* Center-align the road image */
+        .road {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Adjust the position of the top cloud */
+        .top-cloud {
+            display: block;
+            top: 50px;
+            right: 50%;
+            /* Center the cloud horizontally */
+            transform: translateX(50%);
+            /* Center the cloud horizontally */
+        }
+
+        /* Adjust the position of the bottom cloud */
+        .bottom-cloud {
+            display: block;
+            top: 350px;
+            left: 50%;
+            /* Center the cloud horizontally */
+            transform: translateX(-50%);
+            /* Center the cloud horizontally */
+        }
+
+        /* Reduce the margin for the middle container */
+        .middle-container {
+            margin: 30px 0;
+            /* Adjust as needed */
+        }
+
+        /* Adjust the width of the parent container */
+        .parent {
+            display: block;
+            width: 50%;
+            /* Wider width for parent container */
+            margin: 30px auto auto;
+            /* Adjust as needed */
+            text-align: left;
+            row-gap: 2rem;
+        }
+
+        /* Adjust padding-top for the top container */
+        .top-container {
+            padding-top: 30px;
+        }
+    }
+
+        
+    @media (min-width: 1201px) and (max-width: 1600px) {
+        .bottom-cloud{
+            position: absolute;
+            top: 300px;
+            left: 300px;
+        }
+            .parent {
+                display: grid;
+                grid-template-columns: 0.5fr 1fr;
+                grid-template-rows: repeat(1, 1fr);
+                width: 70%;
+                margin: 100px auto auto;
+                text-align: left;
+                row-gap: 2rem;
+            }
+    }
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.screen-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+#contactBox {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   z-index: 1000;
+}
+
+
+
+.screen {
+  display: none;
+  position: relative;
+  top: 100%; /* Position it below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 225px; /* Adjust the margin-top as needed */
+}
+
+
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+.screen-body-item{
+padding: 10px;
+}
+
+.screen-body {
+  padding: 40px;
+}
+
+
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form-group {
+  margin-bottom: 20px;
+}
+
+.app-form-control {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.app-form-button {
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+  background: #9c20e4;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Caveat', cursive;
+            font-family: 'Comic Neue', cursive;
+            font-family: 'Libre Baskerville', serif;
+}
+
+.app-form-button:hover {
+  background: #9c20e4;
+}
+
+/* Add your existing styles here */
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 20px;
+  }
+}

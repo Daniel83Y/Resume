@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Tesler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Comic+Neue:wght@700&family=Libre+Baskerville&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="JavaScript/script.js"></script>
+  </head>
+  <body>
+    <!-- Title -->
+    <section id="title">
+      <div class="top-container">
+        <div class="title-text">
+          <h1>Im Daniel.</h1>
+          <h2>a <span class="pro">pro</span>grammer.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle -->
+    <section id="features">
+      <div class="middle-container">
+        <div class="profile">
+          <img class="profile-pic" src="images/profile.png" alt="Daniel-img" />
+          <h2>Hello.</h2>
+        </div>
+
+        <p class="intro">
+          I am a FullStack Developer and Web Developer. I Collect Marvel and
+          Star Wars memorabilia. I ❤️ coffee <br />cooking and tattoos.
+        </p>
+
+        <hr />
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="parent">
+            <div class="typing">
+              <img src="images/dog.gif" alt="dog-typing" />
+            </div>
+            <div class="coding">
+              <h3>Design & Development</h3>
+              <p>
+                "I started learning code when I was 18 years old because I
+                wanted to program a proffie light saber, Now I'm learning full
+                stack web design and more."
+              </p>
+            </div>
+          </div>
+          <div class="parent">
+            <div class="figure-photo">
+              <img
+                class="figure-img"
+                src="images/figure.png"
+                alt="figure-img" />
+            </div>
+            <div class="figures">
+              <h3>Collecting Figures</h3>
+              <p>
+                "As the avid geek that I am, I've fallen head over heels for the
+                captivating worlds of Marvel and Star Wars. My passion has led
+                me down the path of collecting an impressive array of props and
+                figures from these beloved franchises, and I find immense joy in
+                this fulfilling hobby. After all, in our own unique ways, we all
+                aspire to be heroes."
+              </p>
+            </div>
+          </div>
+
+          <hr />
+        </div>
+      </div>
+    </section>
+    <!-- Contact-me -->
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>"If you are as big of a geek as me, let's unite!"</h3>
+      <h3>
+        I'm currently looking for new opportunities, my inbox is always open.
+      </h3>
+      <p class="contact-message">
+        Whether you have a question or just want to say hi, I'll try my best to
+        get back to you!
+      </p>
+      <button id="contactButton" onclick="togglePopup()">Contact Me</button>
+    </div>
+    <!-- Modal -->
+    <form action="process_form.php" method="post" class="app-form"></form>
+    <div class="screen" id="contactBox">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>US</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +972 50 339 7776</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input id="name" class="app-form-control" placeholder="NAME" />
+            </div>
+            <div class="app-form-group">
+              <input id="email" class="app-form-control" placeholder="EMAIL" />
+            </div>
+            <div class="app-form-group">
+              <input
+                id="contactNo"
+                class="app-form-control"
+                placeholder="CONTACT NO" />
+            </div>
+            <div class="app-form-group message">
+              <input
+                id="message"
+                class="app-form-control"
+                placeholder="MESSAGE" />
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button" onclick="togglePopup()">
+                CANCEL
+              </button>
+              <button class="app-form-button" onclick="submitForm()">
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footr -->
+    <footer>
+      <div class="bottom-container">
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/daniel-tesler-8b88b1288/"
+          >LinkedIn</a
+        >
+        <a class="footer-link" href="https://poke-wiki.vercel.app">PokeWiki</a>
+        <p class="copyright">© Daniel Tesler</p>
+      </div>
+    </footer>
+  </body>
+</html>
