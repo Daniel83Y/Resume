@@ -90,50 +90,69 @@
       <button id="contactButton" onclick="togglePopup()">Contact Me</button>
     </div>
     <!-- Modal -->
-    <form action="process_form.php" method="post" class="app-form"></form>
-    <div class="screen" id="contactBox">
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
+    <form
+      id="contactForm"
+      class="app-form"
+      action="/send-email"
+      method="POST"
+      onSubmit="submitForm(event)">
+      <div class="screen" id="contactBox">
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : +972 50 339 7776</div>
           </div>
-          <div class="app-contact">CONTACT INFO : +972 50 339 7776</div>
-        </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input id="name" class="app-form-control" placeholder="NAME" />
-            </div>
-            <div class="app-form-group">
-              <input id="email" class="app-form-control" placeholder="EMAIL" />
-            </div>
-            <div class="app-form-group">
-              <input
-                id="contactNo"
-                class="app-form-control"
-                placeholder="CONTACT NO" />
-            </div>
-            <div class="app-form-group message">
-              <input
-                id="message"
-                class="app-form-control"
-                placeholder="MESSAGE" />
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button" onclick="togglePopup()">
-                CANCEL
-              </button>
-              <button class="app-form-button" onclick="submitForm()">
-                SEND
-              </button>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input
+                  id="name"
+                  name="name"
+                  class="app-form-control"
+                  placeholder="NAME" />
+              </div>
+              <div class="app-form-group">
+                <input
+                  id="email"
+                  name="email"
+                  class="app-form-control"
+                  placeholder="EMAIL" />
+              </div>
+              <div class="app-form-group">
+                <input
+                  id="contactNo"
+                  name="contactNo"
+                  class="app-form-control"
+                  placeholder="CONTACT NO"
+                  value="" />
+                <!-- Add a default value or leave it empty -->
+              </div>
+              <div class="app-form-group message">
+                <input
+                  id="message"
+                  name="message"
+                  class="app-form-control"
+                  placeholder="MESSAGE" />
+              </div>
+              <div class="app-form-group buttons">
+                <button
+                  class="app-form-button"
+                  type="button"
+                  onclick="togglePopup()">
+                  CANCEL
+                </button>
+                <button class="app-form-button" type="submit">SEND</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
 
-    <!-- Footr -->
+    <!-- Footer -->
     <footer>
       <div class="bottom-container">
         <a
