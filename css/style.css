@@ -524,6 +524,9 @@ padding: 10px;
 
 .screen-body {
   padding: 40px;
+  background-color: #e1e0e0b1;
+    border: 1px solid #000000;
+  border-radius: 5%;
 }
 
 
@@ -542,25 +545,39 @@ padding: 10px;
   margin-bottom: 20px;
 }
 
+.app-form-control::placeholder {
+    text-align: top left;
+    /* Position the placeholder text in the top left corner */
+    white-space: normal;
+    /* Allow the text to wrap */
+    overflow: hidden;
+    /* Hide any overflow text */
+}
+
 .app-form-control {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 5px;
+  height: auto;
 }
 
 .app-form-button {
-    font-size: 16px;
-    height: 40px;
-    width: 100px;
-  background: #9c20e4;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Caveat', cursive;
-            font-family: 'Comic Neue', cursive;
-            font-family: 'Libre Baskerville', serif;
+background: #c8ebe5;
+    background-image: -webkit-linear-gradient(top, #c8ebe5, #c8ebe5);
+    background-image: -moz-linear-gradient(top, #0cad92, #0cad92);
+    background-image: -ms-linear-gradient(top, #80dfcf, #80dfcf);
+    background-image: -o-linear-gradient(top, #c8ebe5, #c8ebe5);
+    background-image: linear-gradient(to bottom, #c8ebe5, #c8ebe5);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Libre Baskerville', serif;
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 
 .app-form-button:hover {
