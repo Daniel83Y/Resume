@@ -47,7 +47,7 @@ async function submitForm(event) {
   const user = Object.fromEntries(formData);
 
   try {
-    const response = await fetch('https://resume-back-end.vercel.app/send-email', {
+    const response = await fetch('https://server-side-bzq2sur7d-daniel83y.vercel.app/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -57,14 +57,11 @@ async function submitForm(event) {
 
     if (response.ok) {
       console.log('Email sent successfully');
-      // Optionally, you can display a success message or perform other actions here
     } else {
       console.log('Error sending email');
-      // Optionally, you can display an error message or perform other error handling here
     }
   } catch (error) {
     console.error('Error:', error);
-    // Handle any network or fetch API related errors here
   }
 
   resetForm();
