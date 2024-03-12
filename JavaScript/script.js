@@ -51,7 +51,9 @@ async function submitForm(event) {
       method: 'POST',
       mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*' 
       },
       body: JSON.stringify(user)
     });
