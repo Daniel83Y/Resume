@@ -49,7 +49,7 @@ async function submitForm(event) {
   try {
     const response = await fetch('https://server-side-henna.vercel.app/send-email', {
       method: 'POST',
-      mode: 'no-cors', // Add this line
+      mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
       },
