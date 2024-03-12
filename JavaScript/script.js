@@ -47,7 +47,7 @@ async function submitForm(event) {
   const user = Object.fromEntries(formData);
 
   try {
-    const response = await fetch('https://server-side-henna.vercel.app/send-email', {
+    const response = await fetch('https://server-side-henna.vercel.app', {
       method: 'POST',
       mode: 'cors',
       headers: {
