@@ -2,8 +2,12 @@
   "version": 2,
   "routes": [
     {
+      "src": "/api/sendEmail",
+      "dest": "/api/sendEmail"  
+    },
+    {
       "src": "/api/(.*)",
-      "dest": "https://heavy-ways-hear.loca.lt/$1"
+      "dest": "https://server-side-henna.vercel.app/$1"
     }
   ]
 }
