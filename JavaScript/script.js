@@ -75,6 +75,6 @@ async function submitForm(event) {
 function resetForm() {
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
-  document.getElementById("contactNo").value = "";
+  document.getElementById("number").value = "";
   document.getElementById("message").value = "";
 }
