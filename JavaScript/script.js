@@ -7,12 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     contactMeButton.addEventListener("click", togglePopup);
   }
 
-  var formFields = document.querySelectorAll("#contactForm .app-form-control");
-  formFields.forEach(function (field) {
-    field.addEventListener("input", checkFormFields);
-  });
-
-  checkFormFields();
+  
 });
 
 function setBackgroundBasedOnTime() {
@@ -43,6 +38,8 @@ function togglePopup() {
   }
 }
 
+var contactButton = document.getElementById("contactButton");
+
 async function submitForm(event) {
   event.preventDefault();
 
@@ -63,8 +60,7 @@ async function submitForm(event) {
     if (response.ok) {
       console.log('Email sent successfully');
     } else {
-      const errorText = await response.text();
-      console.error('Error sending email:', errorText);
+      console.log('Error sending email');
     }
   } catch (error) {
     console.error('Error:', error);
@@ -75,24 +71,10 @@ async function submitForm(event) {
   return false;
 }
 
+
 function resetForm() {
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("number").value = "";
   document.getElementById("message").value = "";
-  checkFormFields();
-}
-
-function checkFormFields() {
-  var name = document.getElementById("name").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var number = document.getElementById("number").value.trim();
-  var message = document.getElementById("message").value.trim();
-  var sendButton = document.querySelector("#contactForm .app-form-button[type='submit']");
-
-  if (name && email && number && message) {
-    sendButton.disabled = false;
-  } else {
-    sendButton.disabled = true;
-  }
 }
