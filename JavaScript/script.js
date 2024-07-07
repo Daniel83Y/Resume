@@ -43,8 +43,6 @@ function togglePopup() {
   }
 }
 
-var contactButton = document.getElementById("contactButton");
-
 async function submitForm(event) {
   event.preventDefault();
 
@@ -65,7 +63,8 @@ async function submitForm(event) {
     if (response.ok) {
       console.log('Email sent successfully');
     } else {
-      console.log('Error sending email');
+      const errorText = await response.text();
+      console.error('Error sending email:', errorText);
     }
   } catch (error) {
     console.error('Error:', error);
