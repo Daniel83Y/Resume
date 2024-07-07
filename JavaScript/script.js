@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     field.addEventListener("input", checkFormFields);
   });
 
-  checkFormFields();
+  checkFormFields(); // Initial check to set the button state
 });
 
 function setBackgroundBasedOnTime() {
@@ -42,6 +42,8 @@ function togglePopup() {
     contactBox.style.display = "none";
   }
 }
+
+var contactButton = document.getElementById("contactButton");
 
 async function submitForm(event) {
   event.preventDefault();
@@ -79,7 +81,7 @@ function resetForm() {
   document.getElementById("email").value = "";
   document.getElementById("number").value = "";
   document.getElementById("message").value = "";
-  checkFormFields();
+  checkFormFields(); // Reset button state after form reset
 }
 
 function checkFormFields() {
