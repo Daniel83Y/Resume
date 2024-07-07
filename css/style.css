@@ -545,20 +545,21 @@ padding: 10px;
   margin-bottom: 20px;
 }
 
-.app-form-control::placeholder {
-    text-align: top left;
-    /* Position the placeholder text in the top left corner */
-    white-space: normal;
-    /* Allow the text to wrap */
-    overflow: hidden;
-    /* Hide any overflow text */
-}
-
 .app-form-control {
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  height: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: auto;
+    resize: vertical;
+}
+textarea.app-form-control {
+    height: auto;
+    min-height: 100px;
+    /* Minimum height of the textarea */
+    max-height: 400px;
+    /* Maximum height of the textarea */
+    overflow: auto;
+    /* Adds scrollbars if the content exceeds the maximum height */
 }
 
 .app-form-button {

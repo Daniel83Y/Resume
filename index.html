@@ -132,11 +132,12 @@
                 <!-- Add a default value or leave it empty -->
               </div>
               <div class="app-form-group message">
-                <input
+                <textarea
                   id="message"
                   name="message"
                   class="app-form-control"
-                  placeholder="MESSAGE" />
+                  placeholder="MESSAGE"
+                  rows="4"></textarea>
               </div>
               <div class="app-form-group buttons">
                 <button
@@ -145,7 +146,9 @@
                   onclick="togglePopup()">
                   CANCEL
                 </button>
-                <button class="app-form-button" type="submit">SEND</button>
+                <button class="app-form-button" type="submit" disabled>
+                  SEND
+                </button>
               </div>
             </div>
           </div>
